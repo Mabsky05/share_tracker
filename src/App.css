@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.Navbar {
+  border: #282c34;
+  text-align: center;
+}
+
+.NavbarItems {
+  display:flex;
+  justify-content: center;
+  gap: 10px;
+  border: #282c34;
+  text-align:center;
+}
