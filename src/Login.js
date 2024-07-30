@@ -18,7 +18,7 @@ return (
 
     <div className={'mainContainer'}>
         <div className={'titleContainer'}>
-            <div>Login</div>
+            <div>Login page</div>
         </div>
     <br/>
 

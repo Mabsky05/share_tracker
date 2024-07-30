@@ -1,7 +1,15 @@
-import React, { UseState } from 'react';
+import React, { startTransition, UseState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Switch, Link } from 'react-router-dom';
 import './App.css'; 
 import Login from './Login'
+
+function LoginButton() {
+  return (
+  <button>
+    Login
+  </button>
+  )
+}
 
 function Placeholder() {
   return (
@@ -19,14 +27,6 @@ function RegisterButton() {
   )
 }
 
-function LoginButton() {
-  return (
-  <button>
-    Login
-  </button>
-  )
-}
-
 function App() {
   return (
     <Router>
@@ -34,9 +34,9 @@ function App() {
       <h1>Share_tracker</h1> 
       <h1 className="NavbarItems">
       <Placeholder />
-      <RegisterButton />
+      <Link to = "/Register"><RegisterButton /></Link>
+      <Link to = "/Login"><LoginButton /></Link>
       <Routes>
-      <Route path="/Login"><LoginButton/></Route>
       </Routes>
       </h1>
       <h2>Index</h2>
