@@ -1,9 +1,10 @@
 import React, { startTransition, UseState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Switch, Link } from 'react-router-dom';
+import { useNavigate, BrowserRouter as Router, Switch, Route, Routes, Link } from 'react-router-dom';
 import './App.css'; 
 import Login from './Login'
+import Register from './Register'
 
-function LoginButton() {
+/* function LoginButton() {
   return (
   <button>
     Login
@@ -26,6 +27,8 @@ function RegisterButton() {
   </button>
   )
 }
+  */
+
 
 function App() {
   return (
@@ -33,10 +36,13 @@ function App() {
     <div className="Navbar">
       <h1>Share_tracker</h1> 
       <h1 className="NavbarItems">
-      <Placeholder />
-      <Link to = "/Register"><RegisterButton /></Link>
-      <Link to = "/Login"><LoginButton /></Link>
+      {/*<Placeholder />*/}
+      <Link to = "/Register">Register</Link>
+      <Link to = "/Login">Login</Link>
+
       <Routes>
+      <Route path = "/Login" element = {<Login />}></Route>
+      <Route path = "/Register" element = {<Register/>}></Route>
       </Routes>
       </h1>
       <h2>Index</h2>

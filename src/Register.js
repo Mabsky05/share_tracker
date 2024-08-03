@@ -13,12 +13,10 @@ const navigate = useNavigate()
 
 const onButtonClick = () => {}*/
 
-export default function Login() { return (
+export default function Register() { return (
 
-            <div>Login page</div>
+            <div>Register</div>
     
 )
 
 }
-
-
