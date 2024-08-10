@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
+import { useLocation, Outlet, BrowserRouter as Router, Switch, Route, Routes, Link } from 'react-router-dom';
+import Navbar from './Navbar';
 
 
 /*const Login = (props) => {
@@ -13,9 +14,16 @@ const navigate = useNavigate()
 
 const onButtonClick = () => {}*/
 
-export default function Login() { return (
+export default function Login() { 
+    const hidden = ['/Login','Register'];
+  
+    return (
 
-            <div>Login page</div>
+            <div>
+                  {!hidden.includes(useLocation.pathname && <Navbar/>)}
+                Login page
+            </div>
+
     
 )
 
