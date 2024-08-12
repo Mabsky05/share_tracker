@@ -15,12 +15,10 @@ const navigate = useNavigate()
 const onButtonClick = () => {}*/
 
 export default function Login() { 
-    const hidden = ['/Login','Register'];
   
     return (
 
             <div>
-                  {!hidden.includes(useLocation.pathname && <Navbar/>)}
                 Login page
             </div>
 

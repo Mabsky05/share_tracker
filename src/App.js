@@ -12,22 +12,16 @@ function App() {
   // let location = useLocation();
   return (
  
-
-  
-
   <Router>
     <NavBarToggle>
       <Navbar/>
     </NavBarToggle>
-  
-  
+   
     <Routes>   
-      {/* <Route path = "/Home" element = {<Navbar/>}/> */}
+      <Route path = "/" element = {<Navbar/>}/>
       <Route path = "/Login" element = {<Login />}/>
       <Route path = "/Register" element = {<Register/>}></Route>
     </Routes>
-
-
   </Router>
 
 

@@ -9,7 +9,7 @@ export default function NavBarToggle({children}) {
     const [navBarState, setNavBarState] = useState(false);
 
     useEffect(()=> { 
-    if (location.pathname == '/Login') {
+    if (location.pathname == '/Login' || '/Register') {
         setNavBarState(false)
     } else {
         setNavBarState(true)
